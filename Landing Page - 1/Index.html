@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Responsive - Website</title>
+</head>
+<body>
+    <div class="main">
+        <section class="section-1">
+            <header class="header">
+                <img src="Images/logo1.png" alt="GO" class="logo">
+                <!-- nav&span is overflowing -->
+                <ul class="nav-btn">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Bible Verse</a></li>
+                    <li><a href="#">Quotes</a></li>
+                    <li><a href="#">Videos</a></li>
+                </ul>
+                <a href="">
+                    <span class="contact-btn">Donate Here!</span>
+                </a>
+                <span class="burger" id="toggleNav"><div class="span"></div><span>
+            </header>
+            <ul class="mobile-nav">
+                <a href="#"><li>Home</li></a>
+                <a href="#"><li>Bible Verse</li></a>
+                <a href="#"><li>Quotes</li></a>
+                <a href="#"><li>Videos</li></a>
+                <a href="#"><li>Donation</li></a>
+            </ul>
+            <div class="section-body">
+                <h1 class="title">God is always with you!</h1>
+                <h4 class="description">
+                    Joshua 1:9 "Do not be frightened, and do not be dismayed, for the Lord your God is with you wherever you go."
+                </h4>
+                <br><br>
+                <a href="#" class="button">Learn More!</a>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+  var toggleNav = document.getElementById('toggleNav');
+  var mobileNav = document.querySelector('.mobile-nav');
+
+  toggleNav.addEventListener('click', function() {
+    // Toggle the display property of the mobile-nav class
+    if (mobileNav.style.display === 'block') {
+      mobileNav.style.display = 'none';
+    } else {
+      mobileNav.style.display = 'block';
+    }
+  });
+});
+
+
+    </script>
+</body>
+</html>
